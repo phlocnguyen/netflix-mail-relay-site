@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · Netflix mail relay</title>
+  <style>
+    body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; color: #1f2328; }
+    h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Privacy policy</h1>
+  <p>Last updated: 12 October 2026</p>
+  <p>Netflix mail relay ("the app") is a personal tool run by its owner on their own computer. It is not offered to the public. This policy explains what the app does with Google user data.</p>
+
+  <h2>Data the app accesses</h2>
+  <p>With the account holder's permission, granted through Google's OAuth consent screen, the app connects to one Gmail inbox over IMAP using the <code>https://mail.google.com/</code> scope. Gmail requires this scope for IMAP access. The app opens the mailbox read-only and reads new messages as they arrive. It never modifies, deletes, moves, marks or sends email.</p>
+
+  <h2>How the data is used</h2>
+  <p>The app only acts on messages from Netflix. For those messages, it checks Gmail's authentication results to make sure the message is genuine, then posts the subject, the sender address, any sign-in or verification code, and the email's action links to the owner's private Telegram group. All other messages are ignored.</p>
+
+  <h2>Data stored</h2>
+  <p>The app does not store email content. On the owner's computer it keeps only the OAuth refresh token, the number of the last processed message, and the Message-ID headers of recently processed messages (at most 500) so that no email is posted twice. Its log records message numbers and decisions only, with no email content, codes or links.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not sold, rented, or shared with anyone. It is not used for advertising, profiling or training any model. The only transfer is the Telegram message described above, sent to a private group chosen by the owner. Telegram's own privacy policy applies to messages stored on Telegram.</p>
+
+  <h2>Limited Use</h2>
+  <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access</h2>
+  <p>The account holder can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access stops the app immediately. The owner can delete the locally stored token and state at any time.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be raised on the app's <a href="https://github.com/phlocnguyen/netflix-mail-relay-site/issues">GitHub issues page</a>.</p>
+
+  <p><a href="./">Back to the home page</a></p>
+</body>
+</html>
